@@ -1,0 +1,37 @@
+  <nav>
+    <div class="nav-wrapper ">
+      <a href="/" class="brand-logo">Продажа компьютеров</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        {{#if isIndex}}
+        <li class="active"><a href="/">Главная</a></li>
+        {{else}}
+        <li><a href="/">Главная</a></li>
+        {{/if}}
+
+        {{#if isComputer}}
+        <li class="active"><a href="/computer">Компьютеры</a></li>
+        {{else}}
+        <li><a href="/computer">Компьютеры</a></li>
+        {{/if}}
+
+        {{#if isLaptops}}
+        <li class="active"><a href="/laptops">Ноутбуки</a></li>
+        {{else}}
+        <li><a href="/laptops">Ноутбуки</a></li>
+        {{/if}}
+
+        {{#if isPeriphery}}
+        <li class="active"><a href="/periphery">Переферия</a></li>
+        {{else}}
+        <li><a href="/periphery">Переферия</a></li>
+        {{/if}}
+
+        {{#if isCatalog}}
+        <li class="active"><a href="/create">Создать</a></li>
+        {{else}}
+        <li><a href="/create">Создать</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
